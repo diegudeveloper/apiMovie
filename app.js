@@ -16,6 +16,49 @@ btnAnterior.addEventListener("click", () => {
     }
 })
 
+const cargarBanner = async () => {
+    
+    try {
+        const respuestaBanner = await fetch("http://api.themoviedb.org/3/movie/popular?api_key=70cd2641c242096a334e9fbbf541e90c&language=es-ES");
+        
+        console.log(respuestaBanner);
+
+        if (respuestaBanner.status === 200) {
+            const dataBanner = await respuestaBanner.json();
+            console.log(dataBanner.results);
+
+            const indiceAleatorio = Math.floor(Math.random() * dataBanner.results.length);
+            const banner = dataBanner.results[indiceAleatorio];
+
+            const peliculaBanner = `
+                <div class="heroImage">
+                    <img class="poster" src="https://image.tmdb.org/t/p/w500/${banner.backdrop_path}">
+                </div>
+            `;
+
+            document.querySelector(".hero").innerHTML = peliculaBanner;
+            
+        } else if (respuestaBanner.status === 401) {
+            console.log("Existe un error de autenticación");
+        } else if (respuestaBanner.status === 404) {
+            console.log("La solicitud que requiere no se encuentra en nuestra base de datos");
+        } else {
+            console.log("Hubo un error desconocido");
+        }
+
+    } catch (error) {
+        console.log(error);
+    }
+
+}
+
+cargarBanner();
+
+
+
+
+//carga de las peliculas
+
 const cargarPelicula = async () => {
     
     try {
@@ -28,6 +71,7 @@ const cargarPelicula = async () => {
             console.log(data.results);
 
             let peliculas = "";
+            
 
             data.results.forEach(pelicula => {
                 peliculas += `
@@ -39,6 +83,7 @@ const cargarPelicula = async () => {
             });
 
             document.getElementById("contenedor").innerHTML = peliculas;
+            
             
         } else if (respuesta.status === 401){
             console.log("Existe un error de autenticacion")

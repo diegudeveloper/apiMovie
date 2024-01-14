@@ -10,6 +10,27 @@ body {
 	color: #1d1d1d;
 }
 
+.hero {
+	width: 100%;
+	height: 320px;
+	/* background-color: #137c32; */
+}
+
+.hero .heroImage {
+	width: 80%;
+	margin: 0 auto;
+	height: 320px;
+	/* background-color: #241744; */
+	overflow: hidden;
+}
+
+.hero .heroImage img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+}
+
 .contenedor {
 	width: 90%;
 	max-width: 1000px;
