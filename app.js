@@ -9,6 +9,13 @@ btnSiguiente.addEventListener("click", () => {
     }
 })
 
+btnAnterior.addEventListener("click", () => {
+    if (pagina > 1) {
+        pagina -= 1;
+        cargarPelicula();
+    }
+})
+
 const cargarPelicula = async () => {
     
     try {
