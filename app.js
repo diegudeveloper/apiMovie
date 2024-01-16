@@ -38,6 +38,10 @@ const cargarBanner = async () => {
                         <div class="textHero">
                             <h2 class="titleBanner">${banner.title}</h2>
                             <p class="textOverview">${banner.overview}</p>
+                            <div class="btnPelis">
+                               <button>Ver Peli</button>
+                               <button>Ver Triller</button>
+                            </div> 
                         </div>
                         <div class="imgPoster">
                             <img clas="imgPoster_img" src="https://image.tmdb.org/t/p/w500/${banner.backdrop_path}">

@@ -57,13 +57,36 @@ body {
 }
 
 .hero .heroImage .containerHero .textHero {
-	width: 50%;
+	width: 75%;
 	height: 100%;
 	margin-bottom: 2rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: start;
+}
+
+.hero .heroImage .containerHero .textHero .btnPelis {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+.hero .heroImage .containerHero .textHero button {
+	width: 150px;
+	height: auto;
+	padding: 10px 15px;
+	border-radius: 14px;
+	border: none;
+	margin: 10px 10px 0 0;
+	display: block;
+	cursor: pointer;
+}
+
+.hero .heroImage .containerHero .textHero button:nth-child(1) {
+	background-color: rgb(246, 53, 53);
+	color: #e0e0e0;
 }
 
 .hero .heroImage .containerHero .imgPoster {
@@ -80,7 +103,8 @@ body {
 
 .hero .heroImage .containerHero .textHero .textOverview {
 	width: 100%;
-	padding: 0 20px 0 0;
+	padding: 0 40px 0 0;
+	font-size: 12px;
 }
 
 .hero .heroImage .containerHero .imgPoster .imgPoster_img {
