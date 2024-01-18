@@ -187,6 +187,33 @@ body {
 	.hero .heroImage .containerHero {
 		flex-direction: column;
 	}
+	
+	.hero .heroImage .containerHero .textHero {
+		text-align: center;
+	}
+
+	.hero .heroImage .containerHero .textHero .titleBanner {
+		margin: 0 auto;
+	}
+
+	.hero .heroImage .containerHero .textHero .textOverview {
+		padding: 0;
+		margin: 0 auto;
+	}
+
+	.hero .heroImage .containerHero .textHero .btnPelis {
+		margin: 0 auto;
+	}
+
+	.hero .heroImage .containerHero .textHero button {
+		padding: 5px 10px;
+		width: 90px;
+		border-radius: 7px;
+	}
+
+	.hero .heroImage .containerHero .imgPoster {
+		display: none;
+	}
 
 	.contenedor {
 		grid-template-columns: repeat(3, 1fr);
