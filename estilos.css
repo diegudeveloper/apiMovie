@@ -189,25 +189,30 @@ body {
 	}
 	
 	.hero .heroImage .containerHero .textHero {
+		width: 90%;
 		text-align: center;
 	}
 
 	.hero .heroImage .containerHero .textHero .titleBanner {
 		margin: 0 auto;
+		margin-bottom: 1rem;
+		font-size: 1.5rem;
 	}
 
 	.hero .heroImage .containerHero .textHero .textOverview {
 		padding: 0;
 		margin: 0 auto;
+		margin-bottom: 1rem;
+		color: #e0e0e0;
 	}
 
 	.hero .heroImage .containerHero .textHero .btnPelis {
 		margin: 0 auto;
+		margin-top: 1rem
 	}
 
 	.hero .heroImage .containerHero .textHero button {
-		padding: 5px 10px;
-		width: 90px;
+		width: 120px;
 		border-radius: 7px;
 	}
 
