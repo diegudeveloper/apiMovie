@@ -177,5 +177,24 @@ body {
 		width: 40%;
 		
 	}
+	.hero .heroImage .containerHero .textHero .textOverview {
+		width: 90%;
+	}
 	
-  }
+}
+
+@media screen and (max-width: 426px) {
+	.hero .heroImage .containerHero {
+		flex-direction: column;
+	}
+
+	.contenedor {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+	.contenedor .pelicula .titulo {
+		font-size: 12px;
+		font-weight: 100;
+	}
+}
