@@ -19,7 +19,7 @@ btnAnterior.addEventListener("click", () => {
 const cargarBanner = async () => {
     
     try {
-        const respuestaBanner = await fetch("http:api.themoviedb.org/3/movie/popular?api_key=70cd2641c242096a334e9fbbf541e90c&language=es-ES");
+        const respuestaBanner = await fetch("http://api.themoviedb.org/3/movie/popular?api_key=70cd2641c242096a334e9fbbf541e90c&language=es-ES");
         
         console.log(respuestaBanner);
 
@@ -44,7 +44,7 @@ const cargarBanner = async () => {
                             </div> 
                         </div>
                         <div class="imgPoster">
-                            <img clas="imgPoster_img" src="https:image.tmdb.org/t/p/w500/${banner.backdrop_path}">
+                            <img clas="imgPoster_img" src="https://image.tmdb.org/t/p/w500/${banner.backdrop_path}">
                         </div>
                     </div> 
                 </div>
@@ -76,7 +76,7 @@ cargarBanner();
 const cargarPelicula = async () => {
     
     try {
-        const respuesta = await fetch (`http:api.themoviedb.org/3/movie/popular?api_key=70cd2641c242096a334e9fbbf541e90c&language=es-ES&page=${pagina}`)
+        const respuesta = await fetch (`http://api.themoviedb.org/3/movie/popular?api_key=70cd2641c242096a334e9fbbf541e90c&language=es-ES&page=${pagina}`)
         
         console.log(respuesta);
 
@@ -90,7 +90,7 @@ const cargarPelicula = async () => {
             data.results.forEach(pelicula => {
                 peliculas += `
                     <div class="pelicula">
-                        <img class="poster" src="https:image.tmdb.org/t/p/w500/${pelicula.poster_path}">
+                        <img class="poster" src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}">
                         <h3 class="titulo">${pelicula.title}</h3>
                     </div>
                 `;
