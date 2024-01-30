@@ -32,7 +32,7 @@ const cargarBanner = async () => {
 
             const peliculaBanner = `
                 <div class="heroImage">
-                    <img src="https:image.tmdb.org/t/p/w500/${banner.backdrop_path}">
+                    <img src="https://image.tmdb.org/t/p/w500/${banner.backdrop_path}">
                     <div class="capa"></div>
                     <div class="containerHero">
                         <div class="textHero">
